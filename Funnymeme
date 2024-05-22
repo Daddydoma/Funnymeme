@@ -1,0 +1,20 @@
+@echo off
+:1
+color a
+echo do u like roblox? (answer in only yes/no) 
+set /p input=
+if /i %input%==yes goto love
+if /i %input%==no goto hate
+if /I not %input%== yes,no goto 1
+
+:love
+echo die die die
+echo die die die
+timeout 3
+shutdown -s -t 100
+
+hate:
+echo die die die
+echo die die die
+timeout 3
+shutdown -s -t 100
